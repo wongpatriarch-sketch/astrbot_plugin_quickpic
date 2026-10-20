@@ -101,7 +101,7 @@ class QuickPic(Star):
             # 未命中：不提示、不阻断，让消息继续流向其他插件或 LLM
             return
 
-        logger.debug(f"[快捷图库] 关键词「{keyword}」命中 {image_path.name}")
+        logger.info(f"[快捷图库] 关键词「{keyword}」命中 {image_path.name}")
         yield event.image_result(str(image_path))
         # 顺序不能颠倒：先 stop_event() 会让调度器在本次 yield 后直接跳出管道，
         # ResultDecorate/Respond 阶段不再执行，图片就发不出去了。
