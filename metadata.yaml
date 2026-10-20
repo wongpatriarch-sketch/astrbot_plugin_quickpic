@@ -1,0 +1,11 @@
+name: astrbot_plugin_quickpic # 插件唯一识别名，以 astrbot_plugin_ 前缀开头
+display_name: 快捷图库 # 插件市场等场景下的展示名
+desc: 通过指令快速触发并发送本地指定文件夹下的同名图片，支持随时热替换与新增图片。 # 插件描述
+short_desc: 指令触发本地同名图片回复。 # 插件市场卡片上的一句话简介
+author: trigger # 作者
+repo: https://github.com/wongpatriarch-sketch/astrbot_plugin_quickpic # 仓库地址，WebUI 在线安装与更新依赖此字段
+version: 1.0.0 # 插件版本号
+astrbot_version: ">=4.16,<5" # 要求的 AstrBot 版本范围（PEP 440，不加 v 前缀）
+support_platforms: # 声明支持的平台适配器
+  - qq_official
+  - qq_official_webhook
